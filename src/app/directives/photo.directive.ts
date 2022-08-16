@@ -1,9 +1,9 @@
 import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[appHighlight]'
+  selector: '[appPhoto]'
 })
-export class HighlightDirective {
+export class PhotoDirective {
 
   constructor(private element: ElementRef, private renderer: Renderer2) { }
   @HostListener('mousemove', ['$event']) mouseMove(event: MouseEvent) {

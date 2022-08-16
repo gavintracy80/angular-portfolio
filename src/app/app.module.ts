@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PhotoComponent } from './photo/photo.component';
-import { HighlightDirective } from './directives/highlight.directive';
+import { PhotoDirective } from './directives/photo.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     PhotoComponent,
-    HighlightDirective
+    PhotoDirective
   ],
   imports: [
     BrowserModule,
