@@ -17,10 +17,10 @@ export class HighlightDirective {
       this.renderer.setStyle(overlay, 'left', '0')
     }
     if (posX < (img.offsetWidth / 2.63) && posY > (img.offsetHeight / 1.18)) {
-      this.renderer.setStyle(img, 'cursor', 'url(../../assets/images/camera3.png)32 25, crosshair')
+      this.renderer.setStyle(img, 'cursor', 'url(/assets/images/camera3.png)32 25, crosshair')
     } else {
-      img.style.cursor = 'url((../../assets/images/camera.png)32 25, crosshair';
-      this.renderer.setStyle(img, 'cursor', 'url(../../assets/images/camera.png)32 25, crosshair')
+      img.style.cursor = 'url((/src/assets/images/camera.png)32 25, crosshair';
+      this.renderer.setStyle(img, 'cursor', 'url(/assets/images/camera.png)32 25, crosshair')
       this.renderer.setStyle(overlay, 'background-size', (img.offsetWidth * 2.3) + 'px ' + (img.offsetHeight * 2.3) + 'px')
       this.renderer.setStyle(overlay, 'background-position', (-posX * 2) + 'px ' + (-posY * 2) + 'px')
     }
