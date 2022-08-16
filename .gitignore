@@ -13,7 +13,7 @@
 # profiling files
 chrome-profiler-events*.json
 
-# node_modules
+# cache
 .angular/cache
 
 # IDEs and editors
