@@ -8,6 +8,7 @@
 #intro {
   position: absolute;
   width: 70%;
+  height: 60%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -74,28 +75,35 @@
   animation: line-blind 1s ease forwards 4.5s 
 }
 
+.menu-item {
+  opacity:0;
+  animation: menu-drop 1s ease forwards 5.5s
+}
+
+.hover-container:hover + .menu-item,
+.menu-item:hover {
+  fill: rgb(170, 165, 165);
+  cursor: pointer;
+}
+
+.hover-container:hover {
+  cursor: pointer;
+}
+
 #about-text {
   transform: translateY(-20%);
-  opacity:0;
-  animation: menu-drop 1s ease forwards 5.5s 
 }
 
 #proj-text {
   transform: translateY(-40%);
-  opacity:0;
-  animation: menu-drop 1s ease forwards 5.5s 
 }
 
 #git-text {
   transform: translateY(-60%);
-  opacity:0;
-  animation: menu-drop 1s ease forwards 5.5s 
 }
 
 #contact-text {
   transform: translateY(-80%);
-  opacity:0;
-  animation: menu-drop 1s ease forwards 5.5s 
 }
 
 @keyframes line-animation{
