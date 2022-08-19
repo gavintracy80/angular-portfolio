@@ -9,6 +9,8 @@
   position: absolute;
   width: 70%;
   height: 60%;
+  max-height: 400px;
+  max-width: 650px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -143,5 +145,12 @@
 @keyframes remove-stroke{
   to {
     stroke-width: 1;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #intro {
+    height: 40%;
+    min-width: 300px;
   }
 }
