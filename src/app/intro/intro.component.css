@@ -14,51 +14,51 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  animation: fill 0.5s ease forwards 3.5s;
+  animation: fill 0.5s ease forwards 3.5s, shadow 0.5s ease forwards 6.5s;
 }
 
-#intro path:nth-child(1){
+#letter-1{
   stroke-dasharray: 450;
   stroke-dashoffset: 450;
   animation: line-animation 2s ease forwards, remove-stroke 0.5s ease forwards 3.5s;
 }
 
-#intro path:nth-child(2){
+#letter-2 {
   stroke-dasharray: 566;
   stroke-dashoffset: 566;
   animation: line-animation 2s ease forwards 0.3s, remove-stroke 0.5s ease forwards 3.5s;
 }
-#intro path:nth-child(3){
+#letter-3 {
   stroke-dasharray: 549;
   stroke-dashoffset: 549;
   animation: line-animation 2s ease forwards 0.6s, remove-stroke 0.5s ease forwards 3.5s;
 }
-#intro path:nth-child(4){
+#letter-4 {
   stroke-dasharray: 337;
   stroke-dashoffset: 337;
   animation: line-animation 2s ease forwards 0.9s, remove-stroke 0.5s ease forwards 3.5s;
 }
-#intro path:nth-child(5){
+#letter-5 {
   stroke-dasharray: 385;
   stroke-dashoffset: 385;
   animation: line-animation 2s ease forwards 1.2s, remove-stroke 0.5s ease forwards 3.5s;
 }
-#intro path:nth-child(6){
+#letter-6 {
   stroke-dasharray: 566;
   stroke-dashoffset: 566;
   animation: line-animation 2s ease forwards 1.5s, remove-stroke 0.5s ease forwards 3.5s;
 }
-#intro path:nth-child(7){
+#letter-7 {
   stroke-dasharray: 298;
   stroke-dashoffset: 298;
   animation: line-animation 2s ease forwards 1.8s, remove-stroke 0.5s ease forwards 3.5s;
 }
-#intro path:nth-child(8){
+#letter-8 {
   stroke-dasharray: 227;
   stroke-dashoffset: 227;
   animation: line-animation 2s ease forwards 2.1s, remove-stroke 0.5s ease forwards 3.5s;
 }
-#intro path:nth-child(9){
+#letter-9 {
   stroke-dasharray: 566;
   stroke-dashoffset: 566;
   animation: line-animation 2s ease forwards 2.4s, remove-stroke 0.5s ease forwards 3.5s;
@@ -82,9 +82,14 @@
   animation: menu-drop 1s ease forwards 5.5s
 }
 
+.hover-container {
+  animation: menu-drop 1s ease forwards 5.5s
+}
+
 .hover-container:hover + .menu-item,
 .menu-item:hover {
   fill: rgb(170, 165, 165);
+  filter: drop-shadow(5px 5px 5px #000000);
   cursor: pointer;
 }
 
@@ -92,19 +97,23 @@
   cursor: pointer;
 }
 
-#about-text {
+#about-text,
+#about-container {
   transform: translateY(-20%);
 }
 
-#proj-text {
+#proj-text,
+#proj-container  {
   transform: translateY(-40%);
 }
 
-#git-text {
+#git-text,
+#git-container  {
   transform: translateY(-60%);
 }
 
-#contact-text {
+#contact-text,
+#contact-container  {
   transform: translateY(-80%);
 }
 
@@ -120,6 +129,13 @@
   }
   to {
     fill: white;
+    filter: drop-shadow(5px 5px 5px #000000);
+  }
+}
+
+@keyframes shadow{
+  to {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.7));
   }
 }
 
