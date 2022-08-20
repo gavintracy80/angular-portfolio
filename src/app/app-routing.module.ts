@@ -6,10 +6,34 @@ import { IntroComponent } from './intro/intro.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-  { path: '', component: IntroComponent },
-  { path: 'about-me', component: AboutMeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent },
+  {
+    path: '', component: IntroComponent, data: {
+      animation: {
+        value: 'intro',
+      }
+    }
+  },
+  {
+    path: 'about-me', component: AboutMeComponent, data: {
+      animation: {
+        value: 'about',
+      }
+    }
+  },
+  {
+    path: 'projects', component: ProjectsComponent, data: {
+      animation: {
+        value: 'projects',
+      }
+    }
+  },
+  {
+    path: 'contact', component: ContactComponent, data: {
+      animation: {
+        value: 'contact',
+      }
+    }
+  },
 
 ];
 
