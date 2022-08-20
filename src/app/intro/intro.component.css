@@ -1,10 +1,7 @@
 .intro-wrapper {
-    width: 100%;
     height: 100vh;
-    background-color: rgb(32,45,48);
   }
   
-
 #intro {
   position: absolute;
   width: 70%;
